@@ -8,6 +8,7 @@ I wanna use :
 
 At the moment we just have a hello.js script that prints a hello message. A Dockerfile is here to build the images running the script.
 
-Useful command : 
-Build the image : `docker build -t hello-node .`
-Run the image : `docker run hello-node`
+
+Useful commands : 
+* Build the image : `docker build -t hello-node .`
+* Run the image : `docker run hello-node`

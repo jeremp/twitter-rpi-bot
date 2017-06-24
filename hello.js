@@ -9,6 +9,13 @@ var client = new Twitter({
  
 console.log("TWITTER_CONSUMER_KEY="+process.env.TWITTER_CONSUMER_KEY);
 
+client.post('statuses/update', {status: 'I Love Twitter'},  function(error, tweet, response) {
+  if(error) throw error;
+  console.log(tweet);  // Tweet body. 
+  console.log(response);  // Raw response object. 
+});
+
+/*
 var params = {screen_name: 'nodejs'};
 client.get('statuses/user_timeline', params, function(error, tweets, response) {
   if (!error) {
@@ -17,3 +24,4 @@ client.get('statuses/user_timeline', params, function(error, tweets, response) {
       console.error("we got an error : "+error);
   }
 });
+*/

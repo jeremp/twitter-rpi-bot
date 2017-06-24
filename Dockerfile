@@ -11,7 +11,7 @@ WORKDIR /usr/src/app
 COPY hello.js /usr/src/app/
 
 # set the tweeter credentials throught ENV variables
-ENV TWEET=$PATH
+ENV request_domain=$request_domain
 
 
 CMD ["node","hello.js"]

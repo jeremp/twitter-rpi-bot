@@ -8,7 +8,15 @@ I wanna use :
 
 At the moment we just have a hello.js script that prints a hello message. A Dockerfile is here to build the images running the script.
 
+# Where do i put my tweeter credentials
+Juste rename the env.list_template file into *env.list* and fill it.
 
-Useful commands : 
-* Build the image : `docker build -t hello-node .`
-* Run the image : `docker run hello-node`
+# Commands 
+
+## Build the image 
+
+`docker build -t tweetbot .`
+
+## Run the image
+
+`docker run --env-file ./env.list tweetbot`
